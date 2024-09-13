@@ -12,5 +12,4 @@ Console.WriteLine(man.Name);
 
 Console.ReadLine();
 
-//Bash a monster
-//
+    
