@@ -1,15 +1,19 @@
-﻿Megaman man = new Megaman() {
-    Name = "Rockman",
-    Hitpoints = 100
-};
-
-Megaman zero = new Megaman();
+﻿Player thePlayer = new Player();
+Goomba theGoomba = new Goomba();
 
 
-zero.Name = "Zero";
+thePlayer.name = "Zero";
 
-Console.WriteLine(man.Name);
+Console.WriteLine($"{thePlayer.name} has {thePlayer.Health} health");
+Console.WriteLine($"{theGoomba.name} has {theGoomba.Health} health and {theGoomba.Size} size");
 
-Console.ReadLine();
+Console.WriteLine("SPECIAL MOVE: SWORD STYLE 100");
+theGoomba.Health = 10;
+ 
+Console.WriteLine($"{theGoomba.name} now has {theGoomba.Health} health");
+Console.WriteLine("Press space to continue..");
+
+
+Console.ReadKey();
 
     
